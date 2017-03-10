@@ -1,6 +1,6 @@
 # Roundfaces.js
 
-Roundfaces.js is a jQuery plugin based on the Stripe.io [about](http://www.example.com/)  page. It randomly places pictures over a container and makes the container size dynamic. Animations can be added with CSS. See a live demo [here](https://www.vermost.net/faces).
+Roundfaces.js is a jQuery plugin based on the Stripe.io [about](http://www.example.com/)  page. This plugin randomly places different sized images without overlapping eachother. Animations can be added with CSS. See a live demo [here](https://www.vermost.net/faces).
 
 ## Usage
 
