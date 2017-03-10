@@ -99,4 +99,4 @@ $(document).ready(function() {
 
 ## Demo
 
-See a live demo [here](https://www.vermost.net/roundfaces)
+See a live demo [here](https://www.vermost.net/faces)
