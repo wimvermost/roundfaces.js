@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-family: 'helvetica neue', 'arial', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    text-align: center;
+}
+
+#text {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.picture {
+    position: absolute;
+    height: 75px;
+    width: 75px;
+    cursor: pointer;
+}
+
+.picture img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    transition: 0.2s;
+    border: 2px solid white;
+    position: relative;
+    z-index: 1;
+}
+
+.picture img:hover {
+    width: 106%;
+    height: 106%;
+    margin-left: -3%;
+    margin-top: -3%;
+}
+
+.container-outer {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+
+.container-inner {
+    animation-name: slowly;
+    animation-duration: 120s;
+    z-index: 1;
+    width: 100%;
+    animation-timing-function: linear;
+    padding-bottom: 100px;
+}
+
+.user_description {
+    text-align: left;
+    width: 150px;
+    height: 120px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px 3px #C4C4C4;
+    padding: 5px;
+    position: relative;
+    z-index: 5;
+    margin-left: -42px;
+    margin-bottom: 10px;
+    visibility: hidden;
+}
+
+.user_description h4 {
+    text-align: left;
+    padding: 8px;
+    font-size: 0.9em;
+    margin: 0;
+    font-weight: 300;
+    color: #292E31;
+}
+
+.user_description p {
+    padding-left: 8px;
+    font-size: 0.7em;
+    margin-top: 0px;
+    font-weight: 300;
+    color: #738085;
+}
+
+.picture:hover .user_description {
+    visibility: visible;
+}
+
+.container-inner:hover {
+    animation-play-state: paused;
+}
+
+@keyframes slowly {
+    100% {
+        transform: translateX(-60%);
+    }
+}
